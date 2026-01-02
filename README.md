@@ -1,5 +1,8 @@
 # Instituto Internacional de Medicina Alternativa para el Bienestar (IDEMAB)
 
+**Versión**: 1.0.0  
+**Última actualización**: Enero 2026
+
 Sitio web oficial del Instituto Internacional de Medicina Alternativa para el Bienestar.
 
 ## SEO y Metadata
