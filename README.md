@@ -57,9 +57,15 @@ El sitio utilizará la paleta de colores oficial de IDEMAB:
 
 © 2024 Instituto de Derecho en Medicina Alternativa y Biomagnetismo. Todos los derechos reservados.
 
-## 👤 Contacto
+## 👤 Contacto y Redes Sociales
 
-Para más información sobre el instituto, visita [idemab.com](https://idemab.com)
+- **Sitio Web:** [idemab.com](https://idemab.com)
+- **Facebook:** [IDEMAB](https://facebook.com/599731959880010)
+- **Instagram:** [@insituto.idemab](https://instagram.com/insituto.idemab)
+- **TikTok:** [@instituto.idemab](https://www.tiktok.com/@instituto.idemab)
+- **YouTube:** [IDEMAB](https://www.youtube.com/channel/UCiiSmfRdcQ9OP4zPponHvTw)
+- **WhatsApp:** +52 1 33 2924 3805
+- **Canal WhatsApp:** [Unirse](https://whatsapp.com/channel/0029Vb6HP1w5kg7DYe2Djt1d)
 
 ---
 
