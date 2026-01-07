@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomado Respiring - IDEMAB</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --idemab-light: #64B5F6;
+            --idemab-dark: #155fa0;
+            --idemab-green: #2CAC64;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f9fafb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .respiring-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        /* HERO */
+        .respiring-hero {
+            background: linear-gradient(135deg, var(--idemab-blue), var(--idemab-dark));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .respiring-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff !important;
+        }
+
+        .respiring-subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* SECTION COMMON */
+        .respiring-section {
+            padding: 50px 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .respiring-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--idemab-blue);
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--idemab-green);
+        }
+
+        /* INTRO */
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            font-size: 1.05rem;
+            color: #444;
+        }
+
+        .quote-box {
+            background: var(--bg-light);
+            border-left: 5px solid var(--idemab-green);
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+        }
+
+        /* TARGET */
+        .target-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .target-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .target-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .target-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .target-title {
+            font-weight: 700;
+            color: var(--idemab-blue);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* MODULES */
+        .modules-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style: none;
+        }
+
+        .module-item {
+            background: white;
+            border: 1px solid #eee;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .module-header {
+            background: var(--idemab-blue);
+            color: white;
+            padding: 10px 20px;
+            font-weight: 700;
+            display: inline-block;
+            border-radius: 0 0 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .module-content {
+            padding: 20px;
+            color: #555;
+        }
+
+        /* METHODOLOGY */
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .method-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        .method-icon {
+            font-size: 2rem;
+            color: var(--idemab-green);
+            margin-bottom: 10px;
+        }
+
+        .method-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* CALENDAR & COST */
+        .info-grid-2 {
+            display: grid;
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Full width for new layout */
+            gap: 40px;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .info-box h3 {
+            color: var(--idemab-blue);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .info-list li::before {
+            content: '•';
+            color: var(--idemab-green);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* CONTACT */
+        .contact-phones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            background: var(--bg-light);
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 500;
+            color: var(--idemab-blue);
+        }
+
+        /* CTA */
+        .cta-container {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f0f7ff;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background: var(--idemab-green);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(44, 172, 100, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(44, 172, 100, 0.5);
+            background: #259656;
+        }
+
+        @media (max-width: 768px) {
+
+            .target-grid,
+            .info-grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .respiring-title {
+                font-size: 2rem;
+            }
+        }
+
+        .btn-micro {
+            display: inline-block;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            transition: opacity 0.2s;
+        }
+
+        .btn-micro:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        /* PRICING CARDS */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .price-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eaeaea;
+            transition: transform 0.3s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .price-header {
+            background: #223659;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .highlight-card .price-header {
+            background: var(--idemab-green);
+        }
+
+        .price-body {
+            padding: 25px;
+        }
+
+        .price-row {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .price-label {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .price-amount {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .separator {
+            height: 1px;
+            background: #eee;
+            margin: 20px 0;
+        }
+
+        .btn-stripe {
+            display: block;
+            width: 100%;
+            background: #223659;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.3s;
+        }
+
+        .btn-stripe:hover {
+            background: #344e7d;
+        }
+
+        .highlight-card .btn-stripe {
+            background: var(--idemab-green);
+        }
+
+        .highlight-card .btn-stripe:hover {
+            background: #259656;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="respiring-container">
+        <!-- SECCIÓN 0: HERO -->
+        <header class="respiring-hero">
+            <h1 class="respiring-title">🌬️ Diplomado Respiring</h1>
+            <p class="respiring-subtitle">Una experiencia profunda de autoconocimiento, ciencia y respiración
+                consciente.</p>
+        </header>
+
+        <!-- SECCIÓN 1: INTRODUCCIÓN -->
+        <section class="respiring-section">
+            <h2 class="section-title">🧭 El Despertar</h2>
+            <div class="intro-text">
+                <p>¿Sabías que tu respiración es mucho más que un acto automático? A nivel celular, tus moléculas se
+                    descomponen para liberar la energía que te sostiene en una serie de reacciones químicas complejas.
+                    Sin embargo, bajo el conocimiento actual de las neurociencias, hoy sabemos que la respiración es un
+                    sistema que contiene información y memorias olvidadas en tus células.</p>
+                <br>
+                <p>Este diplomado es un llamado a descubrir tu historia y comprender cómo puedes cambiarla si eliges
+                    hacerlo.</p>
+            </div>
+            <div class="quote-box">
+                "Respirar es recordar quién eres. Cada inhalación es vida, cada exhalación es libertad".
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: TARGET -->
+        <section class="respiring-section" style="background-color: #fff;">
+            <h2 class="section-title">🎯 ¿Para quién es esta experiencia?</h2>
+            <div class="target-grid">
+                <div class="target-card">
+                    <span class="target-icon">🧘‍♂️</span>
+                    <h3 class="target-title">Terapeutas</h3>
+                    <p>Que deseen integrar herramientas de respiración consciente en sus consultas para guiar a otros
+                        con mayor profundidad.</p>
+                </div>
+                <div class="target-card">
+                    <span class="target-icon">✨</span>
+                    <h3 class="target-title">Buscadores de Bienestar</h3>
+                    <p>Que quieran profundizar en el conocimiento del ser humano que son y reconectarse con una parte
+                        crucial de su vida: la respiración.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: ESTRUCTURA -->
+        <section class="respiring-section" style="background-color: #f9fafb;">
+            <h2 class="section-title">📘 Lo que vas a aprender</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">Dividimos este camino en 13 meses de
+                conexión constante, un número elegido por su poder transformador según la numerología.</p>
+
+            <ul class="modules-list">
+                <li class="module-item">
+                    <div class="module-header">Módulos 1-3</div>
+                    <div class="module-content">Desde la historia de las culturas y las leyes universales hasta la
+                        correlación energética de los chakras con tu cuerpo físico.</div>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Módulos 4-5</div>
+                    <div class="module-content">Un viaje por tus órganos vitales, su mensaje emocional y la exploración
+                        de heridas colectivas y generacionales heredadas en tu ADN.</div>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Módulos 6-8</div>
+                    <div class="module-content">La neurobiología del sistema nervioso y un recorrido desde tu nacimiento
+                        hasta el adulto que eres hoy.</div>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Módulos 9-11</div>
+                    <div class="module-content">Prácticas de liberación corporal, fortalecimiento y la profundidad de la
+                        energía vital (Prana) y la meditación.</div>
+                </li>
+                <li class="module-item">
+                    <div class="module-header">Módulos 12-13</div>
+                    <div class="module-content">Herramientas de autoconocimiento (Arquetipos de Jung, Aromaterapia) y la
+                        metodología aplicada para la consulta clínica.</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN 4: METODOLOGÍA -->
+        <section class="respiring-section">
+            <h2 class="section-title">⚙️ Metodología y Modalidad</h2>
+            <div class="method-grid">
+                <div class="method-item">
+                    <div class="method-icon">💻</div>
+                    <div class="method-title">100% Online</div>
+                    <p>Plataforma abierta 24/7.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">🔴</div>
+                    <div class="method-title">Clases en Vivo</div>
+                    <p>Jueves 5:00 p.m. (Centro de México) vía Zoom.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">🤝</div>
+                    <div class="method-title">Acompañamiento</div>
+                    <p>Semanal con la Mtra. Paty Bens para dudas y prácticas.</p>
+                </div>
+                <div class="method-item">
+                    <div class="method-icon">📚</div>
+                    <div class="method-title">Material</div>
+                    <p>Vídeos, bibliografía y descargables incluidos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5 & 6: CALENDARIO E INVERSIÓN -->
+        <section class="respiring-section" style="background-color: #f9fafb;">
+            <div class="info-grid-2">
+                <!-- CALENDARIO -->
+                <div class="info-box">
+                    <h3>🗓️ Calendario Clave</h3>
+                    <ul class="info-list">
+                        <li><strong>Sesión de Bienvenida:</strong> 24 de octubre, 5:00 p.m.</li>
+                        <li><strong>Inicio de Clases:</strong> 11 de diciembre de 2025.</li>
+                    </ul>
+                </div>
+
+                <!-- INVERSIÓN -->
+                <div class="info-box" style="grid-column: 1 / -1;">
+                    <h3>💳 Inversión en tu Bienestar</h3>
+                    <p style="text-align:center; margin-bottom:20px;">Elige la opción que mejor se adapte a ti. Pagos
+                        del 15 al 20 de cada mes.</p>
+
+                    <div class="pricing-grid">
+                        <!-- CARD NORMAL -->
+                        <div class="price-card">
+                            <div class="price-header">🔷 Precio Normal</div>
+                            <div class="price-body">
+                                <div class="price-row">
+                                    <span class="price-label">Inscripción</span>
+                                    <span class="price-amount">$1,600 MXN</span>
+                                    <a href="https://buy.stripe.com/28EdRaaHc5bYedo17F1ck0c" target="_blank"
+                                        class="btn-stripe">Pagar Inscripción</a>
+                                </div>
+                                <div class="separator"></div>
+                                <div class="price-row">
+                                    <span class="price-label">Mensualidad (13 meses)</span>
+                                    <span class="price-amount">$3,300 MXN</span>
+                                    <a href="https://buy.stripe.com/9B600kcPk5bYedo9Eb1ck0d" target="_blank"
+                                        class="btn-stripe">Pagar Mensualidad</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD BECA -->
+                        <div class="price-card highlight-card">
+                            <div class="price-header">🌟 Beca de Lealtad</div>
+                            <div class="price-body">
+                                <div class="price-row">
+                                    <span class="price-label">Inscripción</span>
+                                    <span class="price-amount">$750 MXN</span>
+                                    <a href="https://buy.stripe.com/bJe5kEaHc1ZM4COaIf1ck0e" target="_blank"
+                                        class="btn-stripe btn-green">Pagar Inscripción</a>
+                                </div>
+                                <div class="separator"></div>
+                                <div class="price-row">
+                                    <span class="price-label">Mensualidad (13 meses)</span>
+                                    <span class="price-amount">$2,970 MXN</span>
+                                    <a href="https://buy.stripe.com/6oU00k02y8oa9X82bJ1ck0f" target="_blank"
+                                        class="btn-stripe btn-green">Pagar Mensualidad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top:30px; font-size: 0.9em; background: #fff; padding: 15px; border-radius: 8px; border: 1px dashed #ccc; text-align:center;">
+                        <strong>Otras opciones de pago:</strong><br>
+                        Transferencia Bancaria (Banorte) • PayPal: paypal@fernandosanchez.com
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: CONTACTO & CTA -->
+        <section class="respiring-section" style="text-align: center;">
+            <h2 class="section-title">📞 ¿Tienes dudas? ¡Contáctanos!</h2>
+            <div class="contact-phones">
+                <div class="contact-item">Inscripciones:<br>+52 33 1429 0988</div>
+                <div class="contact-item">Administración:<br>+52 33 2624 3908</div>
+                <div class="contact-item">Atención al Alumno:<br>+52 33 2924 3805</div>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <a href="https://wa.me/523314290988" target="_blank" class="btn-cta">¡Quiero inscribirme ahora! 🚀</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
