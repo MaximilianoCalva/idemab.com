@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenido a la Comunidad IDEMAB!</title>
+    <style>
+        /* RESET & BASICS */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        /* CONTAINER */
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f4f6f8;
+            padding-bottom: 40px;
+        }
+
+        .main-table {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* HEADER */
+        .header {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #1C73BA;
+        }
+
+        .logo {
+            max-width: 180px;
+            height: auto;
+        }
+
+        /* BODY */
+        .content {
+            padding: 40px 30px;
+        }
+
+        .greeting {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1C73BA;
+            margin: 0 0 20px 0;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555555;
+            margin: 0 0 20px 0;
+        }
+
+        .highlight-box {
+            background-color: #eef7ff;
+            border-left: 4px solid #1C73BA;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        /* BUTTONS */
+        .btn-container {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .btn-primary {
+            background-color: #2CAC64;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(44, 172, 100, 0.3);
+        }
+
+        .btn-secondary {
+            color: #1C73BA;
+            text-decoration: underline;
+            font-size: 14px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: #1C73BA;
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: #fff;
+            line-height: 32px;
+            text-align: center;
+            margin: 0 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 30px 20px;
+            }
+
+            .greeting {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <table class="main-table">
+            <!-- HEADER -->
+            <tr>
+                <td class="header">
+                    <a href="https://idemab.com">
+                        <img src="https://idemab.com/wp-content/uploads/2025/01/Recurso-1-scaled.png" alt="IDEMAB Logo"
+                            class="logo">
+                    </a>
+                </td>
+            </tr>
+
+            <!-- CONTENT -->
+            <tr>
+                <td class="content">
+                    <h1 class="greeting">¡Bienvenido(a) a la Comunidad IDEMAB! 🌿</h1>
+
+                    <p class="text">
+                        En nombre de todo el equipo del <strong>Instituto Internacional de Medicina Alternativa para el
+                            Bienestar</strong>, queremos darte las gracias por unirte a nosotros.
+                    </p>
+
+                    <p class="text">
+                        Has dado el primer paso hacia una vida más consciente y plena. Aquí encontrarás herramientas,
+                        conocimiento y acompañamiento para tu crecimiento personal y profesional en el mundo de la
+                        sanación integral.
+                    </p>
+
+                    <div class="highlight-box">
+                        <p class="text" style="margin:0; font-weight:600; color:#1C73BA;">
+                            💡 ¿Sabías qué?
+                        </p>
+                        <p class="text" style="margin:10px 0 0 0;">
+                            Compartimos contenido exclusivo, fechas de eventos gratuitos y reflexiones diarias a través
+                            de nuestra comunidad en WhatsApp.
+                        </p>
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="https://whatsapp.com/channel/0029Vb6HP1w5kg7DYe2Djt1d" class="btn-primary">
+                            👉 Únete al Canal de WhatsApp
+                        </a>
+                        <br>
+                        <a href="https://idemab.com" class="btn-secondary">Visitar Sitio Web</a>
+                    </div>
+
+                    <p class="text">
+                        Nos emociona mucho caminar contigo.<br>
+                        <i>Con cariño, el equipo de IDEMAB.</i>
+                    </p>
+                </td>
+            </tr>
+
+            <!-- FOOTER -->
+            <tr>
+                <td class="footer">
+                    <div class="social-icons">
+                        <a href="https://facebook.com/599731959880010" class="social-icon">f</a>
+                        <a href="https://instagram.com/insituto.idemab" class="social-icon">in</a>
+                        <a href="https://www.tiktok.com/@instituto.idemab" class="social-icon">tk</a>
+                    </div>
+                    <p style="margin:0 0 10px 0;"><strong>IDEMAB</strong><br>Instituto Internacional de Medicina
+                        Alternativa para el Bienestar</p>
+                    <p style="margin:0; font-size:12px; opacity:0.8;">
+                        Copyright © 2025 Todos los derechos reservados.<br>
+                        <a href="https://idemab.com/contacto/">Contáctanos</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

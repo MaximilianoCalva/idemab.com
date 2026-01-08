@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes IDEMAB</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --idemab-dark-blue: #155fa0;
+            --idemab-green: #2CAC64;
+            --text-dark: #333333;
+            --bg-light: #f9fbfd;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background: transparent;
+        }
+
+        .docentes-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .docentes-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .docentes-intro h1 {
+            color: var(--idemab-blue);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .docentes-intro p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* GRID STYLES */
+        .docentes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Forced 2 columns */
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .docentes-grid {
+                grid-template-columns: 1fr;
+                /* 1 column on mobile */
+            }
+        }
+
+        .docente-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 4px solid transparent;
+            display: flex;
+            /* Flex layout for better alignment */
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .docente-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(28, 115, 186, 0.15);
+            border-bottom-color: var(--idemab-green);
+        }
+
+        .docente-img {
+            width: 100%;
+            max-width: 300px;
+            /* Max width constraint */
+            height: 350px;
+            /* Taller height for portrait feel */
+            border-radius: 20px;
+            /* Rounded corners instead of circle */
+            object-fit: cover;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: none;
+            /* Removed border to cleaner look or optional */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .docente-card:hover .docente-img {
+            /* border-color removed as we removed border */
+            transform: scale(1.02);
+            transition: transform 0.3s;
+        }
+
+        .docente-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--idemab-dark-blue);
+            margin-bottom: 10px;
+        }
+
+        .docente-role {
+            font-size: 0.95rem;
+            color: #777;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /*
+        .btn-profile {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid var(--idemab-blue);
+            color: var(--idemab-blue);
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .btn-profile:hover {
+            background: var(--idemab-blue);
+            color: white;
+        }
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="docentes-container">
+        <!-- HEADER -->
+        <div class="docentes-intro">
+            <h1>Nuestros Docentes</h1>
+            <p>
+                Conoce al equipo de profesionales y expertos que te acompañarán en tu proceso de aprendizaje y sanación.
+            </p>
+        </div>
+
+        <!-- GRID -->
+        <div class="docentes-grid">
+
+            <!-- Alejandra De Benchoam -->
+            <div class="docente-card">
+                <img src="https://idemab.com/wp-content/uploads/2025/08/Alejandra-de-Benchoam.png"
+                    alt="Alejandra De Benchoam" class="docente-img">
+                <div class="docente-name">Alejandra De Benchoam</div>
+                <div class="docente-role">Facilitadora IDEMAB</div>
+            </div>
+
+            <!-- Benito Arreaga -->
+            <div class="docente-card">
+                <img src="https://idemab.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-06-11-at-3.16.57-PM-e1755802966911.jpeg"
+                    alt="Benito Arreaga" class="docente-img">
+                <div class="docente-name">Benito Arreaga</div>
+                <div class="docente-role">Facilitador IDEMAB</div>
+            </div>
+
+            <!-- Diana Yañez -->
+            <div class="docente-card">
+                <img src="https://idemab.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-05-12-at-9.26.06-AM-1-e1755803006493.jpeg"
+                    alt="Diana Yañez" class="docente-img">
+                <div class="docente-name">Diana Yañez</div>
+                <div class="docente-role">Facilitadora IDEMAB</div>
+            </div>
+
+            <!-- Ivette Ferrer Serralde -->
+            <div class="docente-card">
+                <img src="https://idemab.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-21-at-10.52.03-AM-e1755803028564.jpeg"
+                    alt="Ivette Ferrer Serralde" class="docente-img">
+                <div class="docente-name">Ivette Ferrer Serralde</div>
+                <div class="docente-role">Facilitadora IDEMAB</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

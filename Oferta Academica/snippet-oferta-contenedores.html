@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Académica - Contenedor</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --idemab-green: #2CAC64;
+            --text-dark: #333333;
+            --bg-light: #f9fbfd;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background: transparent;
+        }
+
+        .oferta-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .oferta-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .oferta-intro h2 {
+            color: var(--idemab-blue);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .oferta-intro p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* SECTION STYLES */
+        .oferta-section {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            padding: 40px;
+            margin-bottom: 50px;
+            border-left: 5px solid var(--idemab-blue);
+        }
+
+        .oferta-section h3 {
+            color: var(--idemab-blue);
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        .oferta-section h3::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: var(--idemab-green);
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        /* PLACEHOLDER VISUALIZATION (For User Reference) */
+        .shortcode-placeholder {
+            background: #f4f8fb;
+            border: 2px dashed var(--idemab-blue);
+            color: #666;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="oferta-container">
+        <!-- HEADER -->
+        <div class="oferta-intro">
+            <h2>Nuestra Oferta Académica</h2>
+            <p>
+                Descubre nuestros programas de formación diseñados para tu crecimiento personal y profesional. Explora
+                nuestros diplomados, talleres y cursos activos.
+            </p>
+        </div>
+
+        <!-- DIPLOMADOS SECTION -->
+        <div class="oferta-section">
+            <h3>Diplomados</h3>
+            <!-- Shortcode Diplomados -->
+            <div class="shortcode-container">
+                [elementor-template id="23166"]
+            </div>
+        </div>
+
+        <!-- TALLERES SECTION -->
+        <div class="oferta-section">
+            <h3>Talleres y Cursos</h3>
+            <!-- Shortcode Talleres -->
+            <div class="shortcode-container">
+                [elementor-template id="23167"]
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

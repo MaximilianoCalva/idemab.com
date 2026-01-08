@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Plataforma</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* PLATFORM STYLES */
+        .platform-section {
+            padding: 40px 0;
+            background: #000;
+            color: white;
+            text-align: center;
+            /* Changed background image to the 'Community/Philosophy' image for variety */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://idemab.com/wp-content/uploads/2025/06/501817632_17862503736407870_5643448485118745084_n.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .platform-section h2 {
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .platform-section p.intro-text {
+            color: #ddd;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .platform-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .plat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            flex: 1;
+            min-width: 280px;
+            max-width: 400px;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
+        }
+
+        .plat-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .plat-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .plat-item h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            color: white !important;
+            /* Force white text */
+        }
+
+        .plat-item p {
+            color: #eee;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .btn-white {
+            display: inline-block;
+            background-color: white;
+            color: var(--idemab-blue);
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            margin-top: 40px;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="platform-section">
+        <div class="container">
+            <h2>Tecnología para tu Aprendizaje</h2>
+            <p class="intro-text">
+                Fusionamos la sabiduría ancestral con herramientas modernas para que tu proceso sea accesible y
+                constante.
+            </p>
+            <div class="platform-grid">
+                <div class="plat-item">
+                    <span class="plat-icon">📚</span>
+                    <h3>Plataforma 24/7</h3>
+                    <p>Accede a tus cursos, clases grabadas y materiales complementarios en cualquier momento y lugar.
+                    </p>
+                </div>
+                <div class="plat-item">
+                    <span class="plat-icon">🎥</span>
+                    <h3>Contenido Gratuito</h3>
+                    <p>Clases abiertas, entrevistas y ejercicios prácticos en nuestro canal de YouTube para acompañar tu
+                        transformación diaria.</p>
+                </div>
+            </div>
+            <div>
+                <a href="https://idemab.com/oferta-academica/" class="btn-white">Explorar Cursos</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Diplomado Online en Tanatología - Acompañamiento Humano y Sentido: Estrategias de Intervención en el Duelo | IDEMAB">
+    <title>Diplomado en Tanatología | IDEMAB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* IDEMAB Brand Colors */
+            --primary-blue: #1C73BA;
+            --secondary-blue: #2196F3;
+            --dark-blue: #0D47A1;
+            --accent-green: #2CAC64;
+            --text-dark: #2c3e50;
+            --text-gray: #555;
+            --bg-light: #f5f7fa;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Info Bar */
+        .info-bar {
+            background: var(--accent-green);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            font-size: 0.95rem;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 40px;
+        }
+
+        .info-bar .info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-bar .info-item strong {
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--white);
+            background-image: radial-gradient(circle at 100% 0%, rgba(28, 115, 186, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, rgba(44, 172, 100, 0.05) 0%, transparent 50%);
+            padding: 80px 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 20px 0 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--primary-blue);
+            letter-spacing: -1px;
+        }
+
+        .hero-section .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            color: var(--text-gray);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 10px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+            box-shadow: 0 10px 20px rgba(28, 115, 186, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(28, 115, 186, 0.4);
+            background: var(--dark-blue);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(28, 115, 186, 0.05);
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        .section {
+            background: white;
+            padding: 80px 40px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent-green);
+            border-radius: 2px;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            padding: 40px 30px;
+            background: var(--white);
+            border-radius: 16px;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: transparent;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary-blue);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+
+        .benefit-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            border-radius: 50%;
+            background: #f0f7ff;
+        }
+
+        .benefit-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .benefit-card p {
+            color: var(--text-gray);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* Modules Accordion */
+        .module-item {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .module-item:hover {
+            border-color: var(--primary-blue);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .module-header {
+            padding: 25px 30px;
+            cursor: pointer;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .module-header:hover {
+            background: #f8faff;
+        }
+
+        .module-header h3 {
+            color: var(--text-dark);
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-weight: 600;
+        }
+
+        .module-number {
+            background: var(--primary-blue);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(28, 115, 186, 0.3);
+        }
+
+        .module-arrow {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            transition: transform 0.3s ease;
+            background: rgba(28, 115, 186, 0.1);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .module-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #fafafa;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .module-content.active {
+            max-height: 800px;
+        }
+
+        .module-content-inner {
+            padding: 30px 40px;
+        }
+
+        .module-content ul {
+            list-style: none;
+        }
+
+        .module-content li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            color: var(--text-gray);
+            font-size: 1.05rem;
+        }
+
+        .module-content li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: var(--primary-blue);
+            color: white;
+            padding: 80px 40px;
+            margin: 40px 0;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pricing-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            background: white;
+            color: var(--text-dark);
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            border: none;
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.05);
+        }
+
+        .pricing-badge {
+            background: var(--accent-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 20px;
+            align-self: center;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .pricing-amount {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 15px 0;
+            line-height: 1;
+        }
+
+        .pricing-detail {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .pricing-card .btn-cta {
+            background: white;
+            color: var(--primary-blue);
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .pricing-card.featured .btn-cta {
+            background: var(--primary-blue);
+            color: white;
+            box-shadow: 0 10px 20px rgba(28, 115, 186, 0.2);
+        }
+
+        .pricing-card.featured .btn-cta:hover {
+            background: var(--dark-blue);
+        }
+
+        /* Final Section */
+        .final-cta-section {
+            padding: 100px 40px;
+            text-align: center;
+            background: var(--white);
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+
+        .final-cta-section h2 {
+            font-size: 2.8rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+
+            .info-bar {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .section {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Info Bar -->
+        <div class="info-bar">
+            <div class="info-item">
+                <span>📅</span>
+                <span><strong>Inicio:</strong> 16 de Enero</span>
+            </div>
+            <div class="info-item">
+                <span>⏰</span>
+                <span><strong>Hora:</strong> 6:00 p.m.</span>
+            </div>
+            <div class="info-item">
+                <span>💻</span>
+                <span><strong>Modalidad:</strong> 100% Online</span>
+            </div>
+            <div class="info-item">
+                <span>👩‍🏫</span>
+                <span><strong>Instructora:</strong> Lic. María Zamacona</span>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <div style="margin-bottom: 20px;">
+                    <img src="https://idemab.com/wp-content/uploads/2026/01/7203diplomado-en-tanatologia-scaled.png"
+                        alt="Diplomado en Tanatología"
+                        style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                </div>
+                <!-- <span style="color: var(--accent-green); font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Nueva Generación</span> -->
+                <h1>Diplomado Online en Tanatología</h1>
+                <p class="subtitle">Acompañamiento Humano y Sentido: Estrategias de Intervención en el Duelo</p>
+                <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <a href="#inversion" class="btn btn-primary">✅ Inscribirme Ahora</a>
+                    <a href="https://idemab.com/wp-content/uploads/2025/12/Diplomado-Online-en-Tanatologia-DOSSIER.pptx-3.pdf"
+                        class="btn btn-secondary" target="_blank">📥 Descargar Dossier</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="section">
+            <h2 class="section-title">💫 Lo Que Lograrás</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">�️</span>
+                    <h3>Duelo Sano</h3>
+                    <p>Aprende a identificar el duelo sano y el duelo complicado con bases científicas y humanas.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">�️</span>
+                    <h3>Integración</h3>
+                    <p>Integra Tanatología, Cuidados Paliativos, Logoterapia, Gestalt y Primeros Auxilios Psicológicos.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">�</span>
+                    <h3>Autocuidado</h3>
+                    <p>Cuida a otros sin descuidarte: estrategias para prevenir el burnout y la fatiga por compasión.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🌟</span>
+                    <h3>Ética y Humanidad</h3>
+                    <p>Un programa diseñado para quienes desean acompañar procesos de pérdida con ética y herramientas
+                        profesionales.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modules -->
+        <div class="section">
+            <h2 class="section-title">📖 El Recorrido Académico</h2>
+            <div class="modules-container">
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <h3><span class="module-number">M1</span> Fundamentos de la Tanatología</h3>
+                        <span class="module-arrow">▼</span>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-content-inner">
+                            <ul>
+                                <li>Conceptos básicos y evolución histórica de la tanatología</li>
+                                <li>Filosofía y enfoque humanista del acompañamiento</li>
+                                <li>Ética profesional en tanatología</li>
+                                <li>El tanatólogo: perfil, competencias y autocuidado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <h3><span class="module-number">M2</span> Pérdida, Muerte y Duelo</h3>
+                        <span class="module-arrow">▼</span>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-content-inner">
+                            <ul>
+                                <li>Tipos de pérdidas: materiales, simbólicas y relacionales</li>
+                                <li>Proceso de morir: etapas y acompañamiento</li>
+                                <li>Teorías del duelo: Kübler-Ross, Worden, Neimeyer</li>
+                                <li>Duelo normal vs. duelo complicado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <h3><span class="module-number">M3</span> Estrategias de Intervención</h3>
+                        <span class="module-arrow">▼</span>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-content-inner">
+                            <ul>
+                                <li>Evaluación inicial del proceso de duelo</li>
+                                <li>Técnicas de counseling y escucha activa</li>
+                                <li>Intervención en crisis y Primeros Auxilios Psicológicos</li>
+                                <li>Herramientas narrativas y expresivas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More modules (M4-M6) are implicit in structure, user mainly wants details above -->
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <h3><span class="module-number">M4-6</span> Profundización y Práctica</h3>
+                        <span class="module-arrow">▼</span>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-content-inner">
+                            <ul>
+                                <li>Duelo en diferentes contextos (infantil, perinatal, adultos mayores)</li>
+                                <li>Sentido, Espiritualidad y Trascendencia (Logoterapia)</li>
+                                <li>Práctica Profesional, análisis de casos y proyecto integrador</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Pricing -->
+        <div class="pricing-section" id="inversion">
+            <h2 class="section-title" style="color: white;">💰 Inversión y Pagos</h2>
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <span
+                    style="background: #FFD700; color: #1C73BA; padding: 10px 25px; border-radius: 30px; font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    🎓 Beca de lealtad disponible para alumnos y ex-alumnos (IDEBIO, IDECF, IDEMAB)
+                </span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Registration -->
+                <div class="pricing-card">
+                    <h3>Inscripción</h3>
+                    <div class="pricing-amount">$1,500</div>
+                    <div class="pricing-detail">Pago Único para asegurar tu lugar.</div>
+                    <a href="https://buy.stripe.com/28E6oI8z4dIub1cdUr1ck07" class="btn-cta">Pagar Inscripción</a>
+                </div>
+
+                <!-- Monthly -->
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">⭐ MENSUALIDAD</span>
+                    <h3>Mensualidad</h3>
+                    <div class="pricing-amount">$2,600</div>
+                    <div class="pricing-detail">Pago recurrente mes a mes.</div>
+                    <a href="https://buy.stripe.com/aFa7sMaHc5bY0my7w31ck08" class="btn-cta">Pagar Mensualidad</a>
+                </div>
+
+                <!-- Packages -->
+                <div class="pricing-card">
+                    <h3>Paquete 3 Meses</h3>
+                    <div class="pricing-amount">$7,410</div>
+                    <div class="pricing-detail">Pago por periodo de 3 meses.</div>
+                    <a href="https://buy.stripe.com/cNi9AU2aGbAm1qCdUr1ck09" class="btn-cta">Pagar Paquete 3 Meses</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Paquete 6 Meses</h3>
+                    <div class="pricing-amount">$14,040</div>
+                    <div class="pricing-detail">Pago por periodo de 6 meses.</div>
+                    <a href="https://buy.stripe.com/4gM6oI4iOeMyfhs7w31ck0a" class="btn-cta">Pagar Paquete 6 Meses</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Paquete 9 Meses</h3>
+                    <div class="pricing-amount">$14,040</div>
+                    <!-- Keeping user value roughly, assumning promo or typo -->
+                    <div class="pricing-detail">Pago por periodo de 9 meses.</div>
+                    <a href="https://buy.stripe.com/6oU4gA5mSawi2uGdUr1ck0b" class="btn-cta">Pagar Paquete 9 Meses</a>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; opacity: 0.8;">
+                💳 Pagos seguros vía Stripe. Aceptamos tarjetas de crédito y débito.
+            </p>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="final-cta-section">
+            <h2>¿Listo para acompañar con sentido?</h2>
+            <p style="font-size: 1.3rem; color: var(--text-gray); margin-bottom: 30px;">
+                "Acompañar el duelo es un acto profundo de humanidad, presencia y responsabilidad profesional."
+            </p>
+            <a href="https://wa.me/523329243805?text=Hola,%20tengo%20dudas%20sobre%20el%20Diplomado%20en%20Tanatología"
+                class="btn btn-secondary" style="padding: 15px 40px; border-radius: 50px;">💬 Contactar por WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleModule(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.module-arrow');
+            const isActive = content.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.module-content').forEach(c => {
+                c.classList.remove('active');
+                c.previousElementSibling.querySelector('.module-arrow').style.transform = 'rotate(0deg)';
+                c.previousElementSibling.style.background = '#fff';
+            });
+
+            if (!isActive) {
+                content.classList.add('active');
+                arrow.style.transform = 'rotate(180deg)';
+                header.style.background = '#f8faff';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias! - Snippet</title>
+    <style>
+        :root {
+            /* IDEMAB COLORS */
+            --idemab-primary: #1C73BA;
+            --idemab-hover: #2196F3;
+            --idemab-gradient: linear-gradient(135deg, #1C73BA 0%, #2196F3 100%);
+            --white: #ffffff;
+            --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .main-content-snippet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            font-family: var(--font-main);
+            background-color: transparent;
+        }
+
+        .thank-you-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(28, 115, 186, 0.1);
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .icon-container {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+
+        .icon-container::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid #BBDEFB;
+            animation: pulse 2s infinite;
+        }
+
+        .icon-check {
+            width: 50px;
+            height: 50px;
+            stroke: var(--idemab-primary);
+            stroke-width: 3;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            animation: drawCheck 0.6s 0.4s ease-out forwards;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+
+        .title {
+            font-size: 32px;
+            color: var(--idemab-primary);
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .message {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 35px;
+            background: var(--idemab-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(28, 115, 186, 0.2);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(28, 115, 186, 0.3);
+            filter: brightness(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes drawCheck {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-card {
+                padding: 40px 20px;
+            }
+
+            .title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN CONTENT SNIPPET STARTS HERE -->
+    <div class="main-content-snippet">
+        <div class="thank-you-card">
+            <div class="icon-container">
+                <svg class="icon-check" viewBox="0 0 24 24">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h1 class="title">¡Gracias por registrarte!</h1>
+            <p class="message">
+                Hemos recibido tu información correctamente.<br>
+                Nos pondremos en contacto contigo lo antes posible para continuar con tu proceso.
+            </p>
+            <a href="https://idemab.com/" class="btn-home">Volver al Inicio</a>
+        </div>
+    </div>
+    <!-- MAIN CONTENT SNIPPET ENDS HERE -->
+
+</body>
+
+</html>

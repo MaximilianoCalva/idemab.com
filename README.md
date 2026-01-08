@@ -1,72 +1,81 @@
 # Instituto Internacional de Medicina Alternativa para el Bienestar (IDEMAB)
 
-**Versión**: 1.0.0  
+**Versión**: 2.0.0  
 **Última actualización**: Enero 2026
 
 Sitio web oficial del Instituto Internacional de Medicina Alternativa para el Bienestar.
 
-## SEO y Metadata
-
-**Título del Sitio:** IDEMAB - Instituto de Medicina Alternativa para el Bienestar  
-**Descripción Corta:** Instituto líder en Medicina Alternativa y terapias holísticas. Formación profesional en técnicas de bienestar integral, diplomados y certificaciones reconocidas.
-
 ## 📋 Descripción
 
-Este repositorio está preparado para contener los archivos del sitio web institucional de IDEMAB, enfocado en la presentación de información académica y normativa del instituto especializado en medicina alternativa y bienestar integral.
+Repositorio del sitio web institucional de IDEMAB, especializado en medicina alternativa y bienestar integral. Contiene snippets HTML modulares, plantillas de email y componentes reutilizables para WordPress/Elementor.
 
 ## 📁 Estructura del Proyecto
 
 ```
 idemab.com/
-├── .git/
-└── .gitattributes
+├── Docentes/                    # Página de facilitadores
+│   └── snippet-docentes.html
+├── Egresados/                   # Página de egresados
+│   └── snippet-egresados.html
+├── Eventos/                     # Sección de eventos
+│   └── snippet-eventos.html
+├── Gracias/                     # Email y página de agradecimiento
+│   └── email-bienvenida-comunidad.html
+├── Home/                        # Secciones modulares de la página principal
+│   ├── snippet-home-01-hero.html
+│   ├── snippet-home-02-filosofia.html
+│   ├── snippet-home-03-oferta.html
+│   ├── snippet-home-04-facilitadores.html
+│   └── snippet-home-05-plataforma.html
+├── Oferta Academica/           # Programas académicos
+│   ├── Diplomado/
+│   │   ├── Diplomado Respiring/
+│   │   ├── Diplomado Tanatologia/
+│   │   └── diplomados-activos.html
+│   ├── Talleres y Cursos/
+│   │   └── snippet-talleres-cursos.html
+│   └── snippet-oferta-contenedores.html
+├── contacto-idemab.html        # Página de contacto
+├── footer-idemab.html          # Footer con formulario integrado
+├── header-idemab.html          # Header de navegación
+└── README.md
 ```
-
-## 🚧 Estado del Proyecto
-
-Este repositorio está actualmente en preparación. Los componentes web se agregarán próximamente.
-
-## 🎯 Componentes Planificados
-
-- **Reglamento institucional**: Visualizador interactivo del reglamento
-- **Información académica**: Páginas de programas y cursos
-- **Recursos para estudiantes**: Dashboard y materiales de apoyo
 
 ## 🎨 Identidad Visual
 
-El sitio utilizará la paleta de colores oficial de IDEMAB:
-- **Primario**: Tonos característicos de la identidad institucional
-- **Acentos**: Complementarios según la identidad visual del instituto
+**Colores Oficiales:**
+- **Azul Primario**: `#1C73BA`
+- **Verde Acento**: `#2CAC64`
+- **Fuente**: Segoe UI
 
-## 🚀 Tecnologías Previstas
+## 🚀 Tecnologías
 
 - HTML5 semántico
 - CSS3 con diseño responsivo
 - JavaScript vanilla
 - Integración con WordPress/Elementor
+- Shortcodes de Elementor
 
-## 📱 Compatibilidad Objetivo
+## 📱 Compatibilidad
 
-- ✅ Chrome (última versión)
-- ✅ Firefox (última versión)
-- ✅ Safari (última versión)
-- ✅ Edge (última versión)
+- ✅ Chrome, Firefox, Safari, Edge (últimas versiones)
 - ✅ Dispositivos móviles (iOS y Android)
+- ✅ Diseño 100% responsive
+
+## 🔧 Uso
+
+Los archivos están diseñados como snippets modulares para ser insertados en WordPress mediante Elementor. Cada sección es independiente y contiene sus propios estilos.
 
 ## 📄 Licencia
 
-© 2024 Instituto de Derecho en Medicina Alternativa y Biomagnetismo. Todos los derechos reservados.
+© 2025 Instituto Internacional de Medicina Alternativa para el Bienestar. Todos los derechos reservados.
 
-## 👤 Contacto y Redes Sociales
+## 👤 Contacto
 
-- **Sitio Web:** [idemab.com](https://idemab.com)
-- **Facebook:** [IDEMAB](https://facebook.com/599731959880010)
-- **Instagram:** [@insituto.idemab](https://instagram.com/insituto.idemab)
-- **TikTok:** [@instituto.idemab](https://www.tiktok.com/@instituto.idemab)
-- **YouTube:** [IDEMAB](https://www.youtube.com/channel/UCiiSmfRdcQ9OP4zPponHvTw)
-- **WhatsApp:** +52 1 33 2924 3805
-- **Canal WhatsApp:** [Unirse](https://whatsapp.com/channel/0029Vb6HP1w5kg7DYe2Djt1d)
-
----
-
-**Nota**: Este repositorio está en fase inicial. Los componentes web se irán agregando conforme se desarrollen.
+- **Web**: [idemab.com](https://idemab.com)
+- **WhatsApp**: +52 33 2924 3805
+- **Canal WhatsApp**: [Comunidad IDEMAB](https://whatsapp.com/channel/0029Vb6HP1w5kg7DYe2Djt1d)
+- **Facebook**: [IDEMAB](https://facebook.com/599731959880010)
+- **Instagram**: [@insituto.idemab](https://instagram.com/insituto.idemab)
+- **TikTok**: [@instituto.idemab](https://www.tiktok.com/@instituto.idemab)
+- **YouTube**: [Canal IDEMAB](https://www.youtube.com/channel/UCiiSmfRdcQ9OP4zPponHvTw)

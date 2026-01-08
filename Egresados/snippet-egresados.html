@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egresados IDEMAB</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --idemab-dark-blue: #155fa0;
+            --idemab-green: #2CAC64;
+            --text-dark: #333333;
+            --bg-light: #f9fbfd;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background: transparent;
+        }
+
+        .egresados-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .egresados-intro {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .egresados-intro h1 {
+            color: var(--idemab-blue);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .egresados-intro p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* GRID STYLES */
+        .egresados-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 Columns for graduates might be better if there are many */
+            gap: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .egresados-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .egresados-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .egresado-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 3px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .egresado-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(28, 115, 186, 0.1);
+            border-bottom-color: var(--idemab-green);
+        }
+
+        .egresado-img-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            background: #eef7ff;
+        }
+
+        .egresado-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .egresado-card:hover .egresado-img {
+            transform: scale(1.05);
+        }
+
+        .egresado-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--idemab-dark-blue);
+            margin-bottom: 5px;
+        }
+
+        .egresado-program {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .egresado-location {
+            font-size: 0.85rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .egresado-location::before {
+            content: '📍';
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="egresados-container">
+        <!-- HEADER -->
+        <div class="egresados-intro">
+            <h1>Nuestros Egresados</h1>
+            <p>
+                Orgullosamente presentamos a los terapeutas y profesionales formados en IDEMAB, listos para acompañar
+                procesos de sanación con ética y amor.
+            </p>
+        </div>
+
+        <!-- GRID -->
+        <div class="egresados-grid">
+
+            <!-- 
+                AREA DE EGRESADOS
+                Aquí se colocarán las tarjetas de los egresados cuando estén disponibles.
+            -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>

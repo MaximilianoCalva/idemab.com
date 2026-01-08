@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Hero</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --idemab-green: #2CAC64;
+            --white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HERO STYLES */
+        .home-hero {
+            /* Now using flex column for centered text over background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            /* Background Image Setup */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://idemab.com/wp-content/uploads/2026/01/idemab_hero_background_1767843748138.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* Optional parallax effect */
+
+            min-height: 100vh;
+            color: var(--white);
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .hero-text {
+            max-width: 800px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero-text h1 {
+            color: var(--white);
+            /* White text for contrast */
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: #f0f0f0;
+            line-height: 1.6;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--idemab-green);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(44, 172, 100, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background-color: #269656;
+            box-shadow: 0 6px 20px rgba(44, 172, 100, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="home-hero">
+        <div class="container hero-text">
+            <h1>Sanación Integral y Consciente</h1>
+            <p>
+                Somos un espacio dedicado a brindar formación, acompañamiento y herramientas desde diversas disciplinas
+                de la medicina alternativa y el desarrollo espiritual.
+            </p>
+            <p>
+                Tu camino hacia el bienestar físico, emocional, mental y energético comienza aquí.
+            </p>
+            <a href="https://idemab.com/oferta-academica/" class="btn-primary">Ver Oferta Académica</a>
+        </div>
+        <!-- Removed side image div as requested -->
+    </section>
+
+</body>
+
+</html>

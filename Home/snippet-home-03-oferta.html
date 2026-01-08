@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Oferta Académica</title>
+    <style>
+        :root {
+            --idemab-blue: #1C73BA;
+            --idemab-dark-blue: #155fa0;
+            --text-dark: #333333;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* OFFERINGS STYLES */
+        .offerings-section {
+            padding: 40px 0;
+            background: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .offerings-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .offer-text-col h2 {
+            color: var(--idemab-blue);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .offer-text-col p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .offer-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .offer-list li {
+            background: #eef7ff;
+            color: var(--idemab-dark-blue);
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .offer-list li::before {
+            content: '✨';
+            margin-right: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .offerings-content {
+                grid-template-columns: 1fr;
+            }
+
+            .offer-img-col {
+                order: -1;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="offerings-section">
+        <div class="container offerings-content">
+            <div class="offer-text-col">
+                <h2>Transformación desde Adentro</h2>
+                <p>Ofrecemos cursos, talleres, diplomados y sesiones en línea que te permiten reconectar con tu esencia,
+                    tu paz interior y tu propósito.</p>
+                <p>Entre nuestras áreas de formación encontrarás:</p>
+
+                <ul class="offer-list">
+                    <li>Biodesprogramación</li>
+                    <li>Reiki</li>
+                    <li>Angeloterapia</li>
+                    <li>Tarot Terapéutico</li>
+                    <li>Un Curso de Milagros</li>
+                    <li>Sanación Energética</li>
+                </ul>
+            </div>
+            <div class="offer-img-col">
+                <img src="https://idemab.com/wp-content/uploads/2025/06/501267188_17862503727407870_1867251091494782657_n.jpg"
+                    alt="Cursos IDEMAB"
+                    style="width: 100%; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
