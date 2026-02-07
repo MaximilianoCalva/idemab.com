@@ -4,146 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talleres y Cursos - IDEMAB</title>
-    <style>
-        :root {
-            --idemab-blue: #1C73BA;
-            --idemab-dark-blue: #155fa0;
-            --idemab-green: #2CAC64;
-            --text-dark: #333333;
-            --text-light: #666666;
-            --bg-light: #f9fafb;
-        }
-
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--text-dark);
-        }
-
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        /* HEADER */
-        .page-header {
-            margin-bottom: 50px;
-        }
-
-        .page-title {
-            color: var(--idemab-blue);
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        /* COMING SOON CARD */
-        .info-card {
-            background: var(--bg-light);
-            border-radius: 20px;
-            padding: 60px 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            border: 1px solid #eee;
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .info-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-            100% {
-                transform: translateY(0px);
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        idemab: {
+                            blue: '#1D71B8',
+                            green: '#2CAC66',
+                            orange: '#FF9800',
+                            dark: '#1e293b'
+                        }
+                    }
+                }
             }
         }
-
-        .info-title {
-            color: var(--idemab-blue);
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-
-        .info-text {
-            font-size: 1.1rem;
-            color: var(--text-light);
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-
-        /* WHATSAPP CTA */
-        .wa-btn {
-            display: inline-flex;
-            align-items: center;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-        }
-
-        .wa-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-        }
-
-        .wa-btn svg {
-            margin-right: 10px;
-            fill: currentColor;
-        }
-    </style>
+    </script>
 </head>
 
 <body>
 
-    <div class="section-container">
+    <section class="bg-white py-12 md:py-20 font-sans">
+        <div class="max-w-4xl mx-auto px-4 md:px-8 text-center">
 
-        <header class="page-header">
-            <h1 class="page-title">Talleres y Cursos</h1>
-            <p style="font-size: 1.2rem; color: #666;">Formación continua para tu crecimiento profesional y personal.
-            </p>
-        </header>
+            <div
+                class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-3xl p-10 border border-green-100 shadow-sm">
+                <div
+                    class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md text-4xl">
+                    🚀
+                </div>
 
-        <div class="info-card">
-            <span class="info-icon">📚</span>
-            <h2 class="info-title">Nuevos Cursos en Camino</h2>
-            <p class="info-text">
-                Estamos actualizando nuestra oferta de <strong>Talleres Vivenciales y Cursos Teórico-Prácticos</strong>.
-                <br><br>
-                Temáticas como <strong>Duelo, Tanatología, Cuidados Paliativos y Biodescodificación</strong> estarán
-                disponibles muy pronto.
-            </p>
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Próximamente Nuevas Fechas</h2>
 
-            <a href="https://whatsapp.com/channel/0029Vb6HP1w5kg7DYe2Djt1d" target="_blank" class="wa-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.698c1.005.572 1.913.846 2.803.846h.001c3.181 0 5.768-2.586 5.768-5.766-.001-3.18-2.587-5.767-5.766-5.767zm6.768 5.767c0 v3.67c0 .487-.392.883-.883.883h-1.766c-.491 0-.883-.396-.883-.883v-1.766c0-.487-.392-.883-.883-.883h-3.67c-.491 0-.883.396-.883.883v1.766c0 .487-.392.883-.883.883h-1.766c-.491 0-.883-.396-.883-.883v-3.67c0-.487.392-.883.883-.883h1.766c.491 0 .883.396.883.883v1.766c0 .487.392.883.883.883h3.67c.487 0 .883-.396.883-.883v-1.766c0-.487.392-.883.883-.883h1.766c.491 0 .883.396.883.883z" />
-                </svg>
-                Únete a la Comunidad y entérate primero
-            </a>
+                <p class="text-slate-600 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
+                    Actualmente no tenemos cursos o talleres activos en esta categoría, pero estamos preparando nuevas
+                    experiencias de aprendizaje para ti.
+                    <br><span class="font-semibold text-idemab-green">¡Únete a nuestro canal para ser el primero en
+                        enterarte!</span>
+                </p>
+
+                <a href="https://whatsapp.com/channel/0029Vb6HP1w5kg7DYe2Djt1d" target="_blank"
+                    class="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-green-200 hover:-translate-y-1">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Unirme al Canal de WhatsApp
+                </a>
+            </div>
+
         </div>
-
-    </div>
+    </section>
 
 </body>
 

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        idemab: {
+                            blue: '#1D71B8',
+                            green: '#2CAC66',
+                            orange: '#FF9800',
+                            dark: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <section class="bg-white py-12 md:py-20 font-sans">
+        <div class="max-w-6xl mx-auto px-4 md:px-8">
+            <div
+                class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 flex flex-col md:flex-row">
+
+                <!-- Imagen del Evento -->
+                <div class="md:w-1/2 relative bg-slate-100 group">
+                    <img src="https://panel.idemab.com/wp-content/uploads/2026/02/taller-geometria-sagrada-2026-Benito-Arreaga-0161056.jpg"
+                        alt="Diplomado en Geometría Sagrada"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div
+                        class="absolute top-4 left-4 bg-idemab-blue text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
+                        Diplomado Generación 02
+                    </div>
+                </div>
+
+                <!-- Contenido -->
+                <div class="md:w-1/2 p-8 md:p-12 md:flex md:flex-col md:justify-center">
+                    <div class="mb-6">
+                        <span class="text-idemab-green font-semibold tracking-wide uppercase text-sm">Transforma tu
+                            consciencia</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2 leading-tight">
+                            Geometría Sagrada
+                        </h2>
+                        <p class="text-slate-500 font-medium">con Benito Arreaga</p>
+                    </div>
+
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        Sumérgete en un diplomado creado para personas que buscan evolucionar, comprenderse y expandir
+                        su percepción espiritual. Integra conocimiento ancestral, ciencia y energía para armonizar tu
+                        vida.
+                    </p>
+
+                    <blockquote class="border-l-4 border-idemab-orange pl-4 italic text-slate-500 mb-8">
+                        "Transforma tu vida desde la raíz. Transforma tu consciencia. Transforma tu realidad."
+                    </blockquote>
+
+                    <!-- Detalles -->
+                    <div class="flex flex-wrap gap-4 mb-8 text-sm">
+                        <div
+                            class="bg-blue-50 text-idemab-blue px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
+                            📅 Inicio: 18 de Abril de 2026
+                        </div>
+                        <div
+                            class="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
+                            🎓 Clases fines de semana
+                        </div>
+                    </div>
+
+                    <!-- Precios -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 mb-8 space-y-4">
+                        <!-- Precio General -->
+                        <div class="flex justify-between items-center border-b border-slate-200 pb-3">
+                            <span class="text-slate-600 font-bold">General</span>
+                            <div class="text-right">
+                                <p><span class="text-xs text-slate-400 uppercase">Inscripción</span> <span
+                                        class="font-bold text-slate-700">$1,700</span></p>
+                                <p><span class="text-xs text-slate-400 uppercase">Mensualidad</span> <span
+                                        class="font-bold text-slate-700">$3,500</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Beca Lealtad -->
+                        <div class="relative">
+                            <span
+                                class="absolute -top-3 -left-2 bg-idemab-orange text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-full shadow-sm">
+                                Beca Lealtad
+                            </span>
+                            <div class="flex justify-between items-center pt-2">
+                                <div class="text-xs text-slate-500 max-w-[150px] leading-tight">
+                                    Para alumnos y exalumnos de <span class="font-bold text-idemab-blue">IDEBIO, IDECF e
+                                        IDEMAB</span>
+                                </div>
+                                <div class="text-right">
+                                    <p><span class="text-xs text-idemab-green font-bold uppercase">Inscripción</span>
+                                        <span class="font-bold text-idemab-green">$750</span></p>
+                                    <p><span class="text-xs text-idemab-green font-bold uppercase">Mensualidad</span>
+                                        <span class="font-bold text-idemab-green">Beca 10%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="space-y-4">
+                        <a href="https://wa.me/5213314290988?text=Hola,%20me%20interesa%20inscribirme%20al%20Diplomado%20en%20Geometria%20Sagrada"
+                            target="_blank"
+                            class="block w-full text-center bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-green-200 hover:-translate-y-1">
+                            <span class="inline-flex items-center gap-2">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                                <span>¡Únete a la Generación 02!</span>
+                            </span>
+                        </a>
+                        <p class="text-center text-sm text-slate-400">Cupo limitado · Inscripciones vía WhatsApp</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
