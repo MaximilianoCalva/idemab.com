@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        idemab: {
+                            blue: '#1D71B8',
+                            purple: '#6B46C1',
+                            mystic: '#e9d5ff',
+                            gold: '#F59E0B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="bg-white font-sans text-slate-800">
+
+        <!-- Hero Section -->
+        <section
+            class="relative bg-gradient-to-br from-indigo-900 via-idemab-purple to-slate-900 py-16 md:py-24 overflow-hidden text-white">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-purple-500 rounded-full opacity-20 blur-3xl">
+            </div>
+            <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-blue-500 rounded-full opacity-20 blur-3xl">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 text-left">
+                        <span
+                            class="inline-block py-1 px-4 rounded-full bg-white/10 text-idemab-mystic font-bold text-sm uppercase tracking-wider mb-6 border border-white/20">
+                            5ª Generación 2026
+                        </span>
+                        <h1 class="text-4xl md:text-5xl lg:text-3xl font-bold !text-idemab-mystic mb-2">
+                            Bienvenido a la generación No. 5 de Tarot Terapéutico
+                        </h1>
+                        <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold !text-white leading-tight mb-6">
+                            Diplomado de <br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-idemab-mystic to-purple-200">
+                                Tarot Terapéutico
+                            </span> 🔮
+                        </h2>
+                        <p class="text-lg md:text-xl !text-purple-100 leading-relaxed mb-8">
+                            ¿Sabías que el Tarot es mucho más que predecir el futuro? Es una herramienta poderosa para
+                            el autoconocimiento, la sanación y la transformación personal. En este diplomado...
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/5213314290988?text=Hola,%20quisiera%20inscribirme%20al%20Diplomado%20de%20Tarot"
+                                target="_blank"
+                                class="px-8 py-4 bg-idemab-gold hover:bg-yellow-500 text-slate-900 font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 text-lg text-center">
+                                Apartar mi Lugar
+                            </a>
+                            <a href="#temario"
+                                class="px-8 py-4 bg-white/10 border border-white/20 !text-white hover:bg-white/20 font-bold rounded-full shadow-sm hover:shadow-md transition-all text-lg text-center backdrop-blur-sm">
+                                Ver Temario
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://idemab.com/wp-content/uploads/2026/02/TAROT-MAYO-202611133.png"
+                            alt="Curso Tarot Terapéutico"
+                            class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white/10">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intro Text -->
+        <section class="py-16 bg-white text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                <h3 class="text-2xl text-slate-700 font-medium leading-relaxed">
+                    En este curso de <span class="text-idemab-purple font-bold">6 meses</span>, aprenderás a interpretar
+                    el Tarot desde una perspectiva terapéutica, integrando <span
+                        class="text-idemab-purple font-bold">numerología, psicología y medicinas ancestrales</span> para
+                    acompañarte en tu camino de sanación y ayudar a otros. 🌿✨
+                </h3>
+            </div>
+        </section>
+
+        <!-- What You Will Learn Section -->
+        <section id="temario" class="py-16 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-4 md:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-800">¿Qué aprenderás? 📖</h2>
+                    <div class="w-16 h-1 bg-idemab-purple mx-auto mt-4 rounded-full opacity-50"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Item 1 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex gap-4 items-start">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            🔮</div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-1">Historia y Origen</h3>
+                            <p class="text-slate-600 text-sm">Descubre las raíces místicas y simbólicas del Tarot.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex gap-4 items-start">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            🔢</div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-1">Numerología</h3>
+                            <p class="text-slate-600 text-sm">Conexión profunda con los arquetipos numéricos.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex gap-4 items-start">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            🃏</div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-1">Tarot Rider</h3>
+                            <p class="text-slate-600 text-sm">Interpretación terapéutica enfocada en la sanación.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex gap-4 items-start">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            🌿</div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-1">Medicinas Ancestrales</h3>
+                            <p class="text-slate-600 text-sm">Relación sagrada del Tarot con la sabiduría ancestral.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex gap-4 items-start">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            🌳</div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-1">Tarot Transgeneracional</h3>
+                            <p class="text-slate-600 text-sm">Sanación del linaje y patrones familiares.</p>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all border border-slate-100 flex gap-4 items-start">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 text-xl">
+                            🧬</div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-1">Árbol Genealógico</h3>
+                            <p class="text-slate-600 text-sm">Lectura y desprogramación de vínculos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details & Pricing -->
+        <section class="py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 md:px-8">
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl overflow-hidden md:flex">
+                    <!-- Left: Details -->
+                    <div class="p-8 md:p-12 md:w-3/5">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                            <span>📅</span> Inicio: 22 de Mayo
+                        </h3>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-purple-100 text-idemab-purple flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    ✓</div>
+                                <span class="text-slate-700"><strong>Modalidad:</strong> 100% Online (Clases en vivo +
+                                    Grabadas).</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-purple-100 text-idemab-purple flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    ✓</div>
+                                <span class="text-slate-700"><strong>Incluye:</strong> Material extra y
+                                    descargable.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-purple-100 text-idemab-purple flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    ✓</div>
+                                <span class="text-slate-700"><strong>Beca de Lealtad:</strong> Disponible para alumnos y
+                                    exalumnos IDEBIO/IDECF.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right: Pricing -->
+                    <div
+                        class="bg-gradient-to-br from-idemab-purple to-indigo-700 p-8 md:p-12 md:w-2/5 text-white flex flex-col justify-center text-center relative overflow-hidden">
+                        <div class="relative z-10">
+                            <p class="text-purple-200 uppercase tracking-widest text-sm font-bold mb-6">Inversión 💰</p>
+
+                            <div class="mb-4">
+                                <p class="text-purple-200 text-sm uppercase">Inscripción</p>
+                                <p class="text-3xl font-bold">$1,700 <span class="text-sm font-normal">MXN</span></p>
+                            </div>
+                            <div class="w-full h-px bg-white/20 my-4"></div>
+                            <div class="mb-8">
+                                <p class="text-purple-200 text-sm uppercase">Mensualidad</p>
+                                <p class="text-3xl font-bold">$2,800 <span class="text-sm font-normal">MXN</span></p>
+                            </div>
+
+                            <a href="https://wa.me/5213314290988?text=Hola,%20quiero%20inscribirme%20al%20Curso%20de%20Tarot%20Terapéutico"
+                                target="_blank"
+                                class="block w-full py-3 bg-idemab-gold text-slate-900 font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-lg">
+                                Inscribirse vía WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

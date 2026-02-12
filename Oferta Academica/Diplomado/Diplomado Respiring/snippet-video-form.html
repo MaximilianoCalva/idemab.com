@@ -4,111 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video y Registro</title>
     <style>
         :root {
-            --idemab-blue: #1C73BA;
-            --idemab-dark: #155fa0;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --idemab-blue: #1D71B8;
+            --idemab-green: #2CAC66;
+            --idemab-dark: #1e293b;
         }
 
         .vf-container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
-            /* background removed */
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
         }
 
-        .vf-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        /* COLUMNA VIDEO (Vertical 9:16) */
-        .vf-video-col {
-            position: relative;
-            width: 100%;
-            padding-top: 177.77%;
-            /* Aspect Ratio 9:16 */
-            background: #000;
+        .vf-content {
+            background: #fff;
+            padding: 40px;
             border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f1f5f9;
         }
 
-        .vf-video-placeholder {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f0f0f0;
-            color: #888;
-            font-weight: bold;
-            font-size: 1.2rem;
-            flex-direction: column;
-        }
-
-        .vf-video-placeholder span {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        /* Aquí iría el iframe o video tag real */
-        .vf-video-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* COLUMNA FORMULARIO */
-        .vf-form-col {
-            /* background removed */
-            padding: 20px;
-            border-radius: 10px;
-            /* El shortcode de elementor se encargará del estilo interno del form */
+        .vf-header {
+            margin-bottom: 30px;
         }
 
         .vf-title {
             color: var(--idemab-blue);
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
             font-weight: 800;
             line-height: 1.2;
         }
 
         .vf-text {
-            color: #555;
-            margin-bottom: 30px;
+            color: #64748b;
             font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .vf-highlight {
+            color: var(--idemab-green);
+            font-weight: 600;
+        }
+
+        /* Responsive form container adjustments if needed for the shortcode */
+        .elementor-shortcode {
+            margin-top: 20px;
         }
 
         @media (max-width: 768px) {
-            .vf-grid {
-                grid-template-columns: 1fr;
+            .vf-content {
+                padding: 30px 20px;
             }
 
-            .vf-video-col {
-                max-width: 400px;
-                /* Limitar ancho en móvil para que no sea gigante */
-                margin: 0 auto;
+            .vf-title {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -117,27 +72,19 @@
 <body>
 
     <div class="vf-container">
-        <div class="vf-grid">
-            <!-- VIDEO VERTICAL -->
-            <div class="vf-video-col">
-                <!-- Placeholder visible hasta que pongas el video real -->
-                <div class="vf-video-placeholder">
-                    <span>🎥</span>
-                    Video Vertical
-                </div>
-
-                <!-- Descomenta y pon tu URL de video (YouTube Shorts / Vimeo / MP4) aquí: -->
-                <!-- <iframe class="vf-video-iframe" src="https://www.youtube.com/embed/TU_VIDEO_ID" allowfullscreen></iframe> -->
+        <div class="vf-content">
+            <div class="vf-header">
+                <h2 class="vf-title">¿Listo para transformar tu historia?</h2>
+                <p class="vf-text">
+                    Regístrate para recibir el <span class="vf-highlight">Programa Completo</span>, fechas de inicio y
+                    detalles sobre nuestras <span class="vf-highlight">Becas Disponibles</span>.
+                    <br><br>
+                    Da el primer paso hacia tu evolución con el <strong>Diplomado Respiring</strong>.
+                </p>
             </div>
 
-            <!-- FORMULARIO -->
-            <div class="vf-form-col">
-                <h2 class="vf-title">¡Regístrate para más información!</h2>
-                <p class="vf-text">Completa tus datos para recibir todos los detalles del Diplomado.</p>
-
-                <!-- Shortcode de Elementor -->
-                [elementor-template id="71345"]
-            </div>
+            <!-- Shortcode de Elementor para el Formulario -->
+            [elementor-template id="71345"]
         </div>
     </div>
 

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -18,7 +19,8 @@
                             blue: '#1D71B8',
                             green: '#2CAC66',
                             orange: '#FF9800',
-                            dark: '#1e293b'
+                            dark: '#1e293b',
+                            light: '#f0fdf4' // Very light green for backgrounds
                         }
                     }
                 }
@@ -29,111 +31,210 @@
 
 <body>
 
-    <section class="bg-white py-12 md:py-20 font-sans">
-        <div class="max-w-6xl mx-auto px-4 md:px-8">
+    <div class="bg-white font-sans text-slate-800">
+
+        <!-- Hero Section -->
+        <section class="relative bg-idemab-light py-12 md:py-20 overflow-hidden">
             <div
-                class="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 flex flex-col md:flex-row">
+                class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-idemab-green rounded-full opacity-10 blur-3xl">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-idemab-blue rounded-full opacity-10 blur-3xl">
+            </div>
 
-                <!-- Imagen del Evento -->
-                <div class="md:w-1/2 relative bg-slate-100 group">
-                    <!-- Placeholder image based on existing page hero style or generic -->
-                    <img src="https://idemab.com/wp-content/uploads/2026/01/7136diplomado-respiring_Mesa-de-trabajo-1-01.jpg"
-                        alt="Diplomado Respiring"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <div
-                        class="absolute top-4 left-4 bg-idemab-blue text-white px-4 py-1 rounded-full text-sm font-bold shadow-md">
-                        13 Meses de Transformación
-                    </div>
-                </div>
-
-                <!-- Contenido -->
-                <div class="md:w-1/2 p-8 md:p-12 md:flex md:flex-col md:justify-center">
-                    <div class="mb-6">
-                        <span class="text-idemab-green font-semibold tracking-wide uppercase text-sm">Respiración
-                            Consciente</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2 leading-tight">
-                            Diplomado Respiring
-                        </h2>
-                        <p class="text-slate-500 font-medium">Una experiencia de autoconocimiento y ciencia</p>
-                    </div>
-
-                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
-                        Un viaje profundo a través de tu respiración, integrando neurociencias, energía vital y la
-                        sabiduría de tus células. Descubre tu historia y reescríbela desde la consciencia.
-                    </p>
-
-                    <blockquote class="border-l-4 border-idemab-green pl-4 italic text-slate-500 mb-8">
-                        "Respirar es recordar quién eres. Cada inhalación es vida, cada exhalación es libertad."
-                    </blockquote>
-
-                    <!-- Detalles -->
-                    <div class="flex flex-wrap gap-4 mb-8 text-sm">
-                        <div
-                            class="bg-blue-50 text-idemab-blue px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
-                            📅 Inicio: 12 de Febrero de 2026
-                        </div>
-                        <div
-                            class="bg-slate-100 text-slate-700 px-4 py-2 rounded-lg font-semibold flex items-center gap-2">
-                            🎓 100% Online + Clases en Vivo
-                        </div>
-                    </div>
-
-                    <!-- Precios -->
-                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 mb-8 space-y-4">
-                        <!-- Precio General -->
-                        <div class="flex justify-between items-center border-b border-slate-200 pb-3">
-                            <span class="text-slate-600 font-bold">General</span>
-                            <div class="text-right">
-                                <p><span class="text-xs text-slate-400 uppercase">Inscripción</span> <span
-                                        class="font-bold text-slate-700">$1,600</span></p>
-                                <p><span class="text-xs text-slate-400 uppercase">Mensualidad</span> <span
-                                        class="font-bold text-slate-700">$3,300</span></p>
-                            </div>
-                        </div>
-
-                        <!-- Beca Lealtad -->
-                        <div class="relative">
+            <div class="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 text-left">
+                        <span
+                            class="inline-block py-1 px-3 rounded-full bg-idemab-green/10 text-idemab-green font-bold text-sm uppercase tracking-wider mb-4">
+                            Nueva Generación 2026
+                        </span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                            Diplomado Respiring: <br>
                             <span
-                                class="absolute -top-3 -left-2 bg-idemab-green text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-full shadow-sm">
-                                Beca Lealtad
-                            </span>
-                            <div class="flex justify-between items-center pt-2">
-                                <div class="text-xs text-slate-500 max-w-[150px] leading-tight">
-                                    Para alumnos y exalumnos con <span class="font-bold text-idemab-green">Membresía
-                                        Activa</span>
-                                </div>
-                                <div class="text-right">
-                                    <p><span class="text-xs text-idemab-green font-bold uppercase">Inscripción</span>
-                                        <span class="font-bold text-idemab-green">$750</span>
-                                    </p>
-                                    <p><span class="text-xs text-idemab-green font-bold uppercase">Mensualidad</span>
-                                        <span class="font-bold text-idemab-green">$2,970</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CTA -->
-                    <div class="space-y-4">
-                        <a href="https://wa.me/5213314290988?text=Hola,%20me%20interesa%20inscribirme%20al%20Diplomado%20Respiring"
-                            target="_blank"
-                            class="block w-full text-center bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-green-200 hover:-translate-y-1">
-                            <span class="inline-flex items-center gap-2">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-idemab-blue to-idemab-green">
+                                El Arte de Volver a Ti
+                            </span> 🌿
+                        </h1>
+                        <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                            ¿Sabías que en cada inhalación se esconde la llave para transformar tu historia? ✨
+                            Tu respiración no es solo un acto automático, es el puente entre tu biología y tu alma.
+                            🧬🧘‍♂️
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://buy.stripe.com/28EdRaaHc5bYedo17F1ck0c" target="_blank"
+                                class="px-8 py-4 bg-idemab-blue hover:bg-blue-700 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 text-lg text-center">
+                                Inscribirme Ahora
+                            </a>
+                            <a href="https://wa.me/5213314290988?text=Hola,%20quisiera%20más%20información%20sobre%20el%20Diplomado%20Respiring"
+                                target="_blank"
+                                class="px-8 py-4 bg-white border-2 border-idemab-green text-idemab-green hover:bg-idemab-green hover:text-white font-bold rounded-full shadow-sm hover:shadow-md transition-all text-lg flex items-center justify-center gap-2 text-center">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                     <path
                                         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                                 </svg>
-                                <span>¡Únete a Respiring!</span>
-                            </span>
-                        </a>
-                        <p class="text-center text-sm text-slate-400">Inscripciones vía WhatsApp</p>
+                                Contactar Asesor
+                            </a>
+                        </div>
                     </div>
-
+                    <div class="md:w-1/2">
+                        <img src="https://idemab.com/wp-content/uploads/2026/02/diplomado-respiring-2_Mesa-de-trabajo-1-01.png"
+                            alt="Diplomado Respiring"
+                            class="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- Intro Block -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <p class="text-2xl text-slate-700 italic font-medium leading-relaxed">
+                    "Respirar es recordar... cada exhalación es libertad". 🕊️
+                </p>
+                <div class="w-24 h-1 bg-idemab-green mx-auto my-8 rounded-full"></div>
+                <p class="text-lg text-slate-600">
+                    Te invitamos al Diplomado Respiring, un viaje profundo de <strong>13 meses</strong> donde la ciencia
+                    y la conciencia se encuentran para recordarte quién eres realmente.
+                </p>
+            </div>
+        </section>
+
+        <!-- Benefits & Audience -->
+        <section class="py-16 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-4 md:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-slate-800 mb-6">Este viaje es para ti si:</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-idemab-green/20 text-idemab-green flex items-center justify-center flex-shrink-0 mt-1">
+                                    ✓</div>
+                                <p class="text-slate-700">Buscas sanar y reconectar con tu bienestar esencial. 🕯️</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-idemab-green/20 text-idemab-green flex items-center justify-center flex-shrink-0 mt-1">
+                                    ✓</div>
+                                <p class="text-slate-700">Eres terapeuta y deseas herramientas poderosas para guiar a
+                                    otros. 🤝</p>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-idemab-green/20 text-idemab-green flex items-center justify-center flex-shrink-0 mt-1">
+                                    ✓</div>
+                                <p class="text-slate-700">Deseas explorar la metodología clínica y la liberación
+                                    corporal. 🧠💖</p>
+                            </li>
+                        </ul>
+
+                        <div class="mt-8 p-6 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <h3 class="font-bold text-lg text-idemab-blue mb-2">¿Qué recorreremos juntos?</h3>
+                            <p class="text-slate-600">Desde la neurobiología y el mensaje emocional de tus órganos,
+                                hasta el diseño de un camino integral para tu evolución.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-br from-idemab-blue to-idemab-green p-8 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-bold mb-6">Tu experiencia incluye:</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-3">
+                                    <span class="bg-white/20 p-2 rounded-lg">💻</span>
+                                    <span><strong>Modalidad 100% online</strong> (estudia a tu ritmo 24/7).</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="bg-white/20 p-2 rounded-lg">👩‍🏫</span>
+                                    <span><strong>Clases en vivo</strong> los jueves con la maestra Paty Bens.</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="bg-white/20 p-2 rounded-lg">📚</span>
+                                    <span><strong>Material descargable</strong> y acompañamiento continuo.</span>
+                                </li>
+                            </ul>
+                            <div class="mt-8 pt-8 border-t border-white/20">
+                                <p class="text-sm uppercase tracking-widest opacity-80">Fecha de Inicio</p>
+                                <p class="text-3xl font-bold mt-1">05 de Marzo, 2026</p>
+                            </div>
+                        </div>
+                        <!-- Decorativo -->
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white opacity-10 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 md:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Inversión en tu Ser</h2>
+                <p class="text-slate-500 mb-12">No dejes pasar la oportunidad de cambiar tu narrativa celular.</p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Standard Plan -->
+                    <div
+                        class="bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden transform hover:-translate-y-2 transition-all duration-300 relative">
+                        <div class="bg-slate-800 text-white py-4 text-sm font-bold uppercase tracking-wider">
+                            Plan General
+                        </div>
+                        <div class="p-8">
+                            <div class="mb-6">
+                                <p class="text-slate-500 text-sm uppercase font-semibold">Inscripción</p>
+                                <p class="text-4xl font-extrabold text-slate-800">$1,600 <span
+                                        class="text-lg text-slate-400 font-normal">MXN</span></p>
+                            </div>
+                            <div class="mb-8">
+                                <p class="text-slate-500 text-sm uppercase font-semibold">Inversión Mensual</p>
+                                <p class="text-3xl font-bold text-idemab-blue">$3,300 <span
+                                        class="text-lg text-slate-400 font-normal">MXN</span></p>
+                            </div>
+                            <a href="https://buy.stripe.com/28EdRaaHc5bYedo17F1ck0c" target="_blank"
+                                class="block w-full py-4 bg-idemab-blue hover:bg-blue-700 text-white font-bold rounded-xl transition-colors mb-4">
+                                Inscribirse Ahora
+                            </a>
+                            <p class="text-xs text-slate-400">Pago 100% Seguro vía Stripe</p>
+                        </div>
+                    </div>
+
+                    <!-- Loyalty Plan -->
+                    <div
+                        class="bg-white rounded-3xl shadow-xl border-2 border-idemab-green overflow-hidden transform hover:-translate-y-2 transition-all duration-300 relative">
+                        <div
+                            class="absolute top-0 right-0 bg-idemab-green text-white text-xs font-bold px-3 py-1 rounded-bl-xl">
+                            ALUMNOS GRUPO SIN APEGO
+                        </div>
+                        <div
+                            class="bg-idemab-green/10 text-idemab-green py-4 text-sm font-bold uppercase tracking-wider">
+                            Beca de Lealtad
+                        </div>
+                        <div class="p-8">
+                            <div class="mb-6">
+                                <p class="text-slate-500 text-sm uppercase font-semibold">Beneficio Exclusivo</p>
+                                <p class="text-lg font-bold text-slate-800 mt-2">Precio Especial</p>
+                            </div>
+                            <p class="text-slate-600 mb-8 leading-relaxed">
+                                Si eres parte de nuestra comunidad, contacta a tu asesor para activar tu beca especial.
+                            </p>
+                            <a href="https://wa.me/5213314290988?text=Hola,%20soy%20alumno%20y%20me%20interesa%20la%20Beca%20de%20Lealtad%20para%20Respiring"
+                                target="_blank"
+                                class="block w-full py-4 bg-white border-2 border-idemab-green text-idemab-green hover:bg-idemab-green hover:text-white font-bold rounded-xl transition-colors mb-4">
+                                Solicitar Beca
+                            </a>
+                            <p class="text-xs text-slate-400">Vía WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Info -->
+                <div class="mt-12 text-slate-500 text-sm">
+                    <p class="mb-2">¿Tienes dudas?</p>
+                    <p class="font-bold text-lg text-slate-700">Atención de alumnos: +52 33 1429 0988</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
 </body>
 

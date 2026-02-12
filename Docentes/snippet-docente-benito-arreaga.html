@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benito A. Arreaga - IDEMAB Docentes</title>
+    <!-- Tailwind CSS (via CDN for snippet portability) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        idemabBlue: '#1C73BA',
+                        idemabDarkBlue: '#155fa0',
+                        idemabGreen: '#2CAC64',
+                        idemabLightBg: '#f9fbfd',
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-idemabLightBg font-sans text-gray-700">
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-idemabBlue to-idemabDarkBlue opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
+            <!-- Image -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-end shrink-0">
+                <div class="relative group">
+                    <div
+                        class="absolute inset-0 bg-idemabGreen rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-50">
+                    </div>
+                    <img src="https://idemab.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-06-11-at-3.16.57-PM-e1755802966911.jpeg"
+                        alt="Benito A. Arreaga"
+                        class="relative w-64 h-80 md:w-72 md:h-96 object-cover rounded-2xl shadow-2xl border-4 border-white z-10">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-full md:w-2/3 text-center md:text-left text-white">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-idemabGreen/90 text-xs font-bold tracking-wider mb-4 uppercase">Docente
+                    IDEMAB</span>
+                <h1 class="text-4xl md:text-5xl font-bold mb-2 tracking-tight">Benito A. Arreaga</h1>
+                <p class="text-xl md:text-2xl text-blue-100 font-light mb-6">Catedrático | Maestro de Geometría Fractal
+                    | Transformador de Conciencia</p>
+                <div class="w-20 h-1 bg-idemabGreen mx-auto md:mx-0 rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+
+        <!-- INTRO & PHILOSOPHY -->
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-idemabDarkBlue">Más que un catedrático, un formador de conciencia.
+                </h2>
+                <p class="text-lg leading-relaxed">
+                    En nuestro Instituto nos sentimos profundamente orgullosos de contar con un maestro de la
+                    trayectoria, integridad y visión de Benito A. Arreaga.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Su vida ha estado guiada por una visión clara y coherente: contribuir al cambio de la humanidad a
+                    través de la transformación individual. Está convencido de que la verdadera evolución no surge de
+                    normas externas, sino del despertar interior de cada persona. Y esa convicción la transmite con
+                    claridad, profundidad y experiencia en cada enseñanza.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-idemabBlue relative">
+                <svg class="absolute top-4 right-6 w-12 h-12 text-blue-100" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M14.017 21L14.017 18C14.017 16.082 14.58 13.918 19.341 12.083L19.341 7.218C16.92 8.356 16.273 10.158 15.908 11.516C15.659 11.393 15.362 11.314 15.011 11.314C13.298 11.313 11.908 12.703 11.908 14.417C11.908 16.129 13.299 17.52 15.011 17.52C16.039 17.52 16.945 17.025 17.5 16.257L17.5 21L14.017 21L14.017 21ZM5 21L5 18C5 16.082 5.563 13.918 10.324 12.083L10.324 7.218C7.903 8.356 7.256 10.158 6.891 11.516C6.642 11.393 6.345 11.314 5.994 11.314C4.281 11.313 2.891 12.703 2.891 14.417C2.891 16.129 4.282 17.52 5.994 17.52C7.022 17.52 7.928 17.025 8.483 16.257L8.483 21L5 21L5 21Z">
+                    </path>
+                </svg>
+                <p class="text-xl italic text-gray-700 font-medium mb-4">
+                    "Con más de una década impartiendo Geometría Fractal y Geometría Sagrada, ha acompañado a numerosos
+                    estudiantes en procesos de expansión intelectual y espiritual."
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-1bg-idemabBlue rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-idemabDarkBlue">Maestro Excepcional</p>
+                        <p class="text-sm text-gray-500">Claridad didáctica y enfoque integrador</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PILLARS -->
+        <section>
+            <h3 class="text-2xl font-bold text-center text-idemabDarkBlue mb-10">Pilares Fundamentales</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-idemabGreen">
+                    <div
+                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-idemabGreen">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Formación Académica</h4>
+                    <p class="text-sm text-gray-600">Licenciatura en Administración de Empresas por la Universidad
+                        Francisco Marroquín.</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-idemabBlue">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-idemabBlue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Liderazgo Espiritual</h4>
+                    <p class="text-sm text-gray-600">Presidente de la Fundación “Punto Cero”, ex-rabino mesiánico y
+                        pastor independiente.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-amber-500">
+                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Disciplina Personal</h4>
+                    <p class="text-sm text-gray-600">Iron Man finisher, ultramaratonista y atleta de alto rendimiento.
+                    </p>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-gray-600 italic max-w-2xl mx-auto">
+                "Benito representa el equilibrio entre mente, espíritu y acción. Es orador, consejero, mediador de
+                conflictos y líder comprometido."
+            </p>
+        </section>
+
+        <!-- EXPERIENCE TIMELINE STYLE -->
+        <section class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+            <div class="bg-idemabDarkBlue p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <svg class="w-6 h-6 text-idemabGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
+                    </svg>
+                    Experiencia Profesional
+                </h3>
+            </div>
+
+            <div class="p-6 md:p-8 space-y-8 relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-6 md:left-[35px] top-8 bottom-8 w-0.5 bg-gray-200"></div>
+
+                <!-- Item 1 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-idemabBlue rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Presidente de Fundación “Punto Cero”</h4>
+                        <span class="text-sm font-semibold text-idemabBlue bg-blue-50 px-3 py-1 rounded-full">2017 -
+                            Presente</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-2">Guatemala</p>
+                    <p class="text-gray-600">Impulsa procesos de transformación de conciencia y desarrollo humano.
+                        Imparte cursos de Geometría Fractal, consolidándose como referente en la enseñanza y aplicación
+                        de esta disciplina.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-idemabGreen rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Maestro de Geometría Fractal</h4>
+                        <span class="text-sm font-semibold text-idemabGreen bg-green-50 px-3 py-1 rounded-full">2012 -
+                            Presente</span>
+                    </div>
+                    <p class="text-gray-600">Impartiendo formación en distintos espacios y acompañando a estudiantes en
+                        procesos de comprensión profunda y expansión de conciencia.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-gray-400 rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Socio Independiente (Rango Oro)</h4>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">2011 -
+                            Presente</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-2">Max International</p>
+                    <p class="text-gray-600">Desarrollo de liderazgo, estructura organizacional y trabajo en equipo en
+                        compañía multinivel.</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-gray-400 rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Liderazgo Religioso y Comunitario</h4>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">1998 -
+                            2012</span>
+                    </div>
+                    <p class="text-gray-600">Rabino mesiánico en Comunidad “Shebet Efraim” (2001-2012) y Pastor
+                        independiente (1998-2001). Orientación espiritual, formación y acompañamiento.</p>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-gray-400 rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Emprendimientos Previos</h4>
+                        <span class="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">1984 -
+                            1998</span>
+                    </div>
+                    <p class="text-gray-600">Gerente General y propietario de “ECOINSA” (1992-1998) y de Panadería “Pan
+                        de la Abuelita” (1984-1992). Experiencia en gestión empresarial y operaciones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / CONCLUSION -->
+        <section class="text-center bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-3xl p-10 shadow-2xl">
+            <h3 class="text-2xl font-bold mb-4">Un honor contar con su presencia</h3>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8">
+                Contar con Benito A. Arreaga en nuestro equipo docente fortalece nuestra misión y eleva el nivel de
+                formación que ofrecemos. Estamos convencidos de que su presencia enriquece profundamente a nuestra
+                comunidad académica.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER PLACEHOLDER (Integrar con tu footer real) -->
+    <div class="text-center py-6 text-gray-400 text-sm">
+        © IDEMAB - Instituto de Desarrollo Humano
+    </div>
+
+</body>
+
+</html>

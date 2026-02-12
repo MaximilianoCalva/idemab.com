@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        idemab: {
+                            blue: '#1D71B8',
+                            green: '#2CAC66',
+                            orange: '#FF9800',
+                            dark: '#1e293b',
+                            light: '#f0fdf4',
+                            angel: '#e0f2fe' // Light blue for angelic theme
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="bg-white font-sans text-slate-800">
+
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-b from-idemab-angel to-white py-16 md:py-24 overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-white rounded-full opacity-40 blur-3xl"></div>
+            <div class="absolute top-1/2 left-0 -ml-20 w-64 h-64 bg-idemab-blue rounded-full opacity-5 blur-3xl"></div>
+
+            <div class="max-w-6xl mx-auto px-4 md:px-8 relative z-10 text-center">
+                <span
+                    class="inline-block py-1 px-4 rounded-full bg-white text-idemab-blue font-bold text-sm uppercase tracking-wider mb-6 shadow-sm border border-blue-100">
+                    Nuevo Curso Online 2026
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                    Curso de Angeloterapia <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-idemab-blue to-cyan-400">
+                        con Diana Yañez
+                    </span> ✨
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10">
+                    Conéctate con la energía de los Ángeles y descubre su poder sanador y su guía celestial.
+                    Aprende a recibir mensajes, canalizar energía angelical y armonizar tu vida desde el amor
+                    incondicional. 🕊️
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/5213314290988?text=Hola,%20quisiera%20inscribirme%20al%20Curso%20de%20Angeloterapia"
+                        target="_blank"
+                        class="px-8 py-4 bg-idemab-blue hover:bg-blue-700 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 text-lg">
+                        Inscribirme Ahora
+                    </a>
+                    <a href="#detalles"
+                        class="px-8 py-4 bg-white border border-slate-200 text-slate-600 hover:text-idemab-blue hover:border-idemab-blue font-bold rounded-full shadow-sm hover:shadow-md transition-all text-lg">
+                        Ver Temario
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Will Learn Section (Grid) -->
+        <section id="detalles" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 md:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-800">¿Qué aprenderás en este curso?</h2>
+                    <div class="w-16 h-1 bg-idemab-blue mx-auto mt-4 rounded-full opacity-50"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Feature 1 -->
+                    <div
+                        class="bg-slate-50 p-6 rounded-2xl hover:shadow-lg transition-all border border-slate-100 group text-center">
+                        <div
+                            class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-3xl mb-4 mx-auto shadow-sm group-hover:scale-110 transition-transform">
+                            👼
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Conexión Angelical</h3>
+                        <p class="text-slate-600 text-sm">Aprende a comunicarte y conectar profundamente con tus ángeles
+                            guardianes.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div
+                        class="bg-slate-50 p-6 rounded-2xl hover:shadow-lg transition-all border border-slate-100 group text-center">
+                        <div
+                            class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-3xl mb-4 mx-auto shadow-sm group-hover:scale-110 transition-transform">
+                            ✨
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Técnicas de Sanación</h3>
+                        <p class="text-slate-600 text-sm">Domina herramientas para canalizar la energía sanadora de los
+                            ángeles.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div
+                        class="bg-slate-50 p-6 rounded-2xl hover:shadow-lg transition-all border border-slate-100 group text-center">
+                        <div
+                            class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-3xl mb-4 mx-auto shadow-sm group-hover:scale-110 transition-transform">
+                            📜
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Mensajes Divinos</h3>
+                        <p class="text-slate-600 text-sm">Desarrolla tu intuición para interpretar las señales y
+                            mensajes del cielo.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div
+                        class="bg-slate-50 p-6 rounded-2xl hover:shadow-lg transition-all border border-slate-100 group text-center">
+                        <div
+                            class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-3xl mb-4 mx-auto shadow-sm group-hover:scale-110 transition-transform">
+                            🌟
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Plan de Vida</h3>
+                        <p class="text-slate-600 text-sm">Diseña un plan de vida espiritual con la guía amorosa de los
+                            ángeles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Details & CTA -->
+        <section class="py-16 bg-idemab-angel/30">
+            <div class="max-w-5xl mx-auto px-4 md:px-8">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden md:flex">
+                    <!-- Left: Details -->
+                    <div class="p-8 md:p-12 md:w-3/5">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
+                            <span>📅</span> Inicio: 03 de Marzo, 2026
+                        </h3>
+
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-100 text-idemab-blue flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    ✓</div>
+                                <span class="text-slate-700"><strong>Modalidad Online:</strong> Aprende desde cualquier
+                                    lugar del mundo.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-100 text-idemab-blue flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    ✓</div>
+                                <span class="text-slate-700"><strong>Incluye Material de Apoyo:</strong> Guías y
+                                    recursos descargables.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-100 text-idemab-blue flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    ✓</div>
+                                <span class="text-slate-700"><strong>Reconocimiento Oficial:</strong> Avalado por el
+                                    Instituto de Medicina Alternativa para el Bienestar.</span>
+                            </li>
+                        </ul>
+
+                        <div class="p-4 bg-orange-50 border border-orange-100 rounded-xl flex items-start gap-3">
+                            <span class="text-2xl">🎁</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Tu guía experta</h4>
+                                <p class="text-xs text-slate-600 mt-1">Este curso es impartido por <strong>Diana
+                                        Yañez</strong>, terapeuta experta en sanación angelical.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Pricing -->
+                    <div
+                        class="bg-idemab-blue p-8 md:p-12 md:w-2/5 text-white flex flex-col justify-center text-center relative overflow-hidden">
+                        <div class="relative z-10">
+                            <p class="text-blue-100 uppercase tracking-widest text-sm font-bold mb-2">Inversión Total
+                            </p>
+                            <p class="text-5xl font-extrabold mb-2">$2,500 <span class="text-lg font-normal">MXN</span>
+                            </p>
+                            <div class="w-full h-px bg-white/20 my-4"></div>
+                            <p class="text-blue-100 mb-1">Inscripción</p>
+                            <p class="text-2xl font-bold mb-8">$750 <span class="text-sm font-normal">MXN</span></p>
+
+                            <a href="https://wa.me/5213314290988?text=Hola,%20quiero%20inscribirme%20al%20Curso%20de%20Angeloterapia"
+                                target="_blank"
+                                class="block w-full py-3 bg-white text-idemab-blue font-bold rounded-lg hover:bg-blue-50 transition-colors shadow-lg">
+                                Inscribirse vía WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Decorativo -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-white opacity-10 rounded-full"></div>
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-white opacity-10 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
