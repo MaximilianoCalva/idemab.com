@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Ruth Yáñez Gamero - IDEMAB Docentes</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        idemabBlue: '#1C73BA',
+                        idemabDarkBlue: '#155fa0',
+                        idemabGreen: '#2CAC64',
+                        idemabLightBg: '#f9fbfd',
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-idemabLightBg font-sans text-gray-700">
+
+    <!-- HERO SECTION -->
+    <header class="relative bg-white overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-cyan-700 to-idemabDarkBlue opacity-90"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
+            <!-- Image -->
+            <div class="w-full md:w-1/3 flex justify-center md:justify-end shrink-0">
+                <div class="relative group">
+                    <div
+                        class="absolute inset-0 bg-cyan-500 rounded-2xl rotate-3 group-hover:rotate-6 transition-transform opacity-50">
+                    </div>
+                    <img src="https://idemab.com/wp-content/uploads/2025/08/WhatsApp-Image-2025-05-12-at-9.26.06-AM-1-e1755803006493.jpeg"
+                        alt="Diana Ruth Yáñez Gamero"
+                        class="relative w-64 h-80 md:w-72 md:h-96 object-cover rounded-2xl shadow-2xl border-4 border-white z-10">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-full md:w-2/3 text-center md:text-left text-white">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-cyan-600/90 text-xs font-bold tracking-wider mb-4 uppercase text-white shadow-sm border border-white/20">Docente
+                    IDEMAB</span>
+                <h1 class="text-3xl md:text-5xl font-bold mb-2 tracking-tight text-white drop-shadow-md leading-tight">
+                    Diana Ruth<br>Yáñez Gamero</h1>
+                <p class="text-lg md:text-xl text-white font-light mb-6 leading-tight drop-shadow-md mt-4">Bioterapeuta
+                    Emocional | Facilitadora en Terapias Alternativas | Comunicadora</p>
+                <div class="w-20 h-1 bg-idemabGreen mx-auto md:mx-0 rounded-full shadow-lg"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+
+        <!-- INTRO & VISION -->
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-idemabDarkBlue">Sanación desde el entendimiento profundo de las
+                    emociones.</h2>
+                <p class="text-lg leading-relaxed">
+                    En nuestro Instituto valoramos profundamente la experiencia y preparación de Diana Ruth Yáñez
+                    Gamero, quien aporta una sólida formación en terapias alternativas, acompañamiento emocional y
+                    desarrollo humano.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Diana integra herramientas de la biodesprogramación, la energía y la conciencia corporal, ofreciendo
+                    una visión integral donde la sanación parte del impacto de las emociones en la biología.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-lg border-l-4 border-cyan-600 relative">
+                <svg class="absolute top-4 right-6 w-12 h-12 text-cyan-100" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z">
+                    </path>
+                </svg>
+                <p class="text-xl italic text-gray-700 font-medium mb-4">
+                    "Acompañando a las personas que desean emprender un nuevo modelo de vida basado en la conciencia y
+                    la transformación interior."
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-1 bg-cyan-600 rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-idemabDarkBlue">Enfoque Humano</p>
+                        <p class="text-sm text-gray-500">Conciencia y Transformación</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIALTIES GRID -->
+        <section>
+            <h3 class="text-2xl font-bold text-center text-idemabDarkBlue mb-10">Formación en Terapias Alternativas</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-cyan-500">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4 text-cyan-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Energía y Espiritualidad</h4>
+                    <p class="text-sm text-gray-600">Master Reiki, Angeloterapia (Doreen Virtue), Desdoblamiento del
+                        Tiempo (Jean Pierre Garnier) y Practicante de UCDM (9 años).</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-idemabBlue">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-idemabBlue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Biología y Emoción</h4>
+                    <p class="text-sm text-gray-600">Biodesprogramación (Fernando Sánchez), Diplomado en Psicología
+                        Corporal y Geometría Sagrada.</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-pink-500">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4 text-pink-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Comunicación</h4>
+                    <p class="text-sm text-gray-600">Conductora de radio y TV, escritora en medios estatales y
+                        facilitadora de cursos de capital humano y desarrollo personal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEDIA EXPERIENCE HIGHLIGHT -->
+        <section
+            class="bg-gradient-to-r from-cyan-700 to-idemabDarkBlue rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+                <span class="text-cyan-300 font-bold tracking-widest uppercase text-sm mb-2 block">Divulgación y
+                    Docencia</span>
+                <h3 class="text-3xl font-bold mb-4">Voz de Conciencia y Desarrollo Humano</h3>
+                <p class="text-lg text-blue-100 mb-6 max-w-3xl">
+                    Su experiencia en comunicación le permite transmitir el conocimiento de manera clara, accesible y
+                    cercana. Diana ha sido un puente para llevar temas de conciencia a empresas, medios de comunicación
+                    y espacios educativos como CONALEP.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white/10 px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">Radio y
+                        TV</span>
+                    <span
+                        class="bg-white/10 px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">Conferencista</span>
+                    <span class="bg-white/10 px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">Escritora</span>
+                    <span class="bg-white/10 px-4 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">Formadora</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAJECTORY TIMELINE -->
+        <section class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+            <div class="bg-gray-800 p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Trayectoria Profesional
+                </h3>
+            </div>
+
+            <div class="p-6 md:p-8 space-y-8 relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-6 md:left-[35px] top-8 bottom-8 w-0.5 bg-gray-200"></div>
+
+                <!-- Item 1 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-cyan-500 rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Biodesprogramadora y Terapeuta</h4>
+                        <span class="text-sm font-semibold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">Desde
+                            2018</span>
+                    </div>
+                    <p class="text-gray-600">Acompañamiento en procesos individuales de transformación. Integración de
+                        Biodesprogramación, Psicología Corporal y Geometría Sagrada.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-idemabBlue rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Formación Continua</h4>
+                    </div>
+                    <p class="text-gray-600">Diplomado en Psicología Corporal (2021-2023). Practicante de Un Curso de
+                        Milagros y Metafísica China. Certificación en Angeloterapia y Desdoblamiento del Tiempo.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative pl-12 md:pl-16">
+                    <div
+                        class="absolute left-[13px] md:left-[26px] top-1 w-5 h-5 bg-white border-4 border-pink-400 rounded-full shadow-sm z-10">
+                    </div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                        <h4 class="font-bold text-lg text-gray-800">Comunicación y Faciliación</h4>
+                    </div>
+                    <p class="text-gray-600">Facilitadora de cursos de desarrollo personal en CONALEP y empresas.
+                        Conductora de medios y escritora enfocada en temas de conciencia.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <div class="text-center py-6 text-gray-400 text-sm">
+        © IDEMAB - Instituto de Desarrollo Humano
+    </div>
+
+</body>
+
+</html>
